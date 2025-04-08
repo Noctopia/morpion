@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp2.MainPage">
+
+    <VerticalStackLayout
+            Padding="20"
+            Spacing="20">
+        <Label x:Name="StatusLabel" Text="📢 Joueur X commence !" FontSize="24" HorizontalOptions="Center"/>
+
+        <Grid RowDefinitions="*,*,*" ColumnDefinitions="*,*,*" Padding="10">
+            <Button x:Name="B0" Clicked="OnButtonClicked" Grid.Row="0" Grid.Column="0" FontSize="36"/>
+            <Button x:Name="B1" Clicked="OnButtonClicked" Grid.Row="0" Grid.Column="1" FontSize="36"/>
+            <Button x:Name="B2" Clicked="OnButtonClicked" Grid.Row="0" Grid.Column="2" FontSize="36"/>
+            <Button x:Name="B3" Clicked="OnButtonClicked" Grid.Row="1" Grid.Column="0" FontSize="36"/>
+            <Button x:Name="B4" Clicked="OnButtonClicked" Grid.Row="1" Grid.Column="1" FontSize="36"/>
+            <Button x:Name="B5" Clicked="OnButtonClicked" Grid.Row="1" Grid.Column="2" FontSize="36"/>
+            <Button x:Name="B6" Clicked="OnButtonClicked" Grid.Row="2" Grid.Column="0" FontSize="36"/>
+            <Button x:Name="B7" Clicked="OnButtonClicked" Grid.Row="2" Grid.Column="1" FontSize="36"/>
+            <Button x:Name="B8" Clicked="OnButtonClicked" Grid.Row="2" Grid.Column="2" FontSize="36"/>
+        </Grid>
+
+        <Button Text="🔄️ Rejouer" Clicked="OnResetClicked" BackgroundColor="LightGray"/>
+    </VerticalStackLayout>
+</ContentPage>
